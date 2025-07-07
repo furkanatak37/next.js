@@ -19,13 +19,11 @@ function FilterPanel({
     setPriceRange(tempPriceRange);
 
     const filtered = products.filter(product => {
-      // DEĞİŞİKLİK BURADA: Ürünün 0-1 arasındaki puanı 5'lik sisteme çevriliyor.
       const scoreOutOfFive = (product.popularityScore || 0) * 5;
       
       return (
         product.price >= tempPriceRange[0] &&
         product.price <= tempPriceRange[1] &&
-        // Karşılaştırma artık doğru ölçekte yapılıyor.
         scoreOutOfFive >= selectedRating
       );
     });

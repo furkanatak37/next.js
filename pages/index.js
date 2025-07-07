@@ -43,7 +43,6 @@ function HomePage() {
       .finally(() => setLoading(false));
   }, []);
 
-  // Düzeltme: className'ler `styles` objesi ile kullanıldı.
   if (loading) return <div className={styles['status-message']}><h1>Ürünler yükleniyor...</h1></div>;
   if (error) return <div className={`${styles['status-message']} ${styles['error']}`}><h1>Hata: {error}</h1></div>;
 
@@ -58,9 +57,7 @@ function HomePage() {
       <header className={styles['product-list-header']}>
         <h1>Product List</h1>
       </header>
-      
-      {/* İyileştirme: Layout için ana içerik sarmalayıcısı eklendi */}
-      <main className={styles['main-content']}>
+            <main className={styles['main-content']}>
         <aside className={styles['sidebar']}>
             <FilterPanel
               priceRange={priceRange}

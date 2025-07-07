@@ -7,10 +7,8 @@ const colorMap = {
   white: { className: 'color-white-gold' },
 };
 
-// Yıldızları render eden fonksiyon
 function renderStars(score) {
   const stars = [];
-  // 1. DEĞİŞİKLİK: 0-1 arasındaki skor 5'lik sisteme çevrildi.
   const scoreOutOfFive = (score || 0) * 5;
   const fullStars = Math.round(scoreOutOfFive);
   const maxStars = 5;
@@ -67,7 +65,6 @@ function ProductCard({ product }) {
 
         <div className={styles['product-rating']}>
           {renderStars(product.popularityScore)}
-          {/* 2. DEĞİŞİKLİK: Sayısal skor da 5'lik sisteme göre gösterildi. */}
           <span>{((product.popularityScore || 0) * 5).toFixed(1)}/5</span>
         </div>
       </div>
