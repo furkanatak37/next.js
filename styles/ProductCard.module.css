@@ -1,0 +1,168 @@
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('../public/Fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont-reg';
+  src: url('../public/Fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+ font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont-med';
+  src: url('../public/Fonts/montserat/Montserrat-Medium.otf') format('truetype');
+ font-weight: normal;
+  font-style: normal;
+}
+
+
+.product-card {
+  background-color: #fff;
+  border: 0px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 280px; 
+  max-width: 280px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius:12px;
+  height: 250px;
+}
+
+.product-info {
+  width: 100%;
+}
+
+.product-title {
+  font-family: 'Mont-med';
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.product-price {
+  font-family: 'Mont-reg';
+  font-size: 15px;
+  margin: 0 0 15px 0;
+}
+
+.product-colors {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.color-swatch {
+
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.color-swatch.selected {
+  border-color: #007bff; /* Seçili rengin etrafındaki halka */
+}
+
+/* Renkleri map'lemek için */
+.color-yellow-gold { background-color: #E6CA97; }
+.color-rose-gold { background-color: #E1A4A9; }
+.color-white-gold { background-color: #D9D9D9; border: 1px solid #dcdcdc; } /* Beyaz altında görünmesi için hafif border */
+
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  font-family: 'Avenir-Book';
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.stars-container {
+  display: flex;
+  align-items: center;
+}
+
+.stars-container .star {
+  font-size: 20px;
+}
+
+.stars-container .star.full {
+  color: #FFC107;
+}
+
+.stars-container .star.empty {
+  color: #e0e0e0;
+}
+
+
+
+/* Renk seçeneklerini sola hizala */
+.product-colors {
+  display: flex;
+  justify-content: flex-start; /* sola hizalar */
+  gap: 8px; /* renkler arası boşluk */
+  margin-bottom: 10px;
+}
+
+/* Renk daireleri */
+.color-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  display: inline-block;
+}
+
+/* Rating alanı sola hizalı */
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* sola hizala */
+  gap: 6px;
+}
+
+/* Yıldızlar için stil */
+.stars-container {
+  display: flex;
+}
+
+/* Dolu yıldızlar */
+.star.full {
+  color: gold;
+}
+
+/* Boş yıldızlar */
+.star.empty {
+  color: lightgray;
+}

@@ -1,5 +1,8 @@
-import "@/styles/globals.css";
+import 'rc-slider/assets/index.css'; // Slider kütüphanesinin stili
+  // ProductCard için global stil
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
+
+export default MyApp;

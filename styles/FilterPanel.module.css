@@ -1,0 +1,107 @@
+
+.filter-panel {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 40px; 
+  margin-bottom: 30px;
+  padding: 20px;
+  justify-content: flex-end; 
+
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap; 
+}
+
+
+
+.rating-filter .star-selector {
+  display: flex;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.rating-filter .star {
+  color: lightgray;
+  transition: color 0.2s;
+}
+
+.rating-filter .star.selected {
+  color: gold;
+}
+
+.filter-panel button {
+  padding: 8px 16px;
+  background-color: #00838f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.filter-panel button:hover {
+  background-color: #1d5ec0;
+}
+
+
+
+
+
+
+.filter-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.price-range-display {
+  width: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.apply-filter-button {
+  padding: 8px 24px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.apply-filter-button:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+}
+
+
+.rc-slider-rail {
+  background-color: #e9e9e9;
+  height: 6px;
+}
+
+.rc-slider-track {
+  background-color: #00838f; 
+  height: 6px;
+}
+
+.rc-slider-handle {
+  width: 20px;
+  height: 20px;
+  margin-top: -7px;
+  background-color: #fff;
+  border: 4px solid #00838f; 
+  opacity: 1;
+  box-shadow: none;
+}
+
+.rc-slider-handle-dragging,
+.rc-slider-handle:focus {
+  border-color: #005662; 
+  box-shadow: 0 0 0 5px rgba(0, 131, 143, 0.2);
+}
